@@ -13,8 +13,6 @@
 
 2. 添加文件到暂存区: git add .
 
-> 如果 add 之后又对文件进行了修改, 只需要再 add 一次
-
 3. 提交更改: git commit -m "first commit"
 
 > 首次提交之前需要先配置: 
@@ -26,3 +24,5 @@
 5. 关联远程仓库: git remote add origin https://github.com/JAndy9179/Leetcode.git
 
 6. 推送代码到 github: git push -u origin main
+
+> 如果 push 之前又对文件进行了修改, 只需要再 add 一次, 然后再 commit 一次, 之后再 push
