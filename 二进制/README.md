@@ -23,6 +23,6 @@
 
 4. 重命名分支为 main: git branch -M main
 
-5. 关联远程仓库: git remote add origin https://github.com/JAndy9179/Leecode.git
+5. 关联远程仓库: git remote add origin https://github.com/JAndy9179/Leetcode.git
 
 6. 推送代码到 github: git push -u origin main
