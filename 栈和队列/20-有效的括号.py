@@ -5,14 +5,17 @@ class Solution:
             if c in ['(', '[', '{']:
                 stack.append(c)
             else:
-                if len(stack) == 0:
+                if not stack:
                     return False
-                temp = stack.pop()
-                if c == ']' and temp != '[':
-                    return False
-                elif c == '}' and temp != '{':
-                    return False
-                elif c == ')' and temp != '(':
-                    return False
+                else:
+                    temp = stack.pop()
+                    if c == ')' and temp == '(':
+                        continue
+                    elif c == ']' and temp == '[':
+                        continue
+                    elif c == '}' and temp == '{':
+                        continue
+                    else:
+                        return False
         
-        return True if len(stack) == 0 else False
+        return True if not stack else False
